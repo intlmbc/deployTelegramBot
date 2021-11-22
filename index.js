@@ -3,11 +3,15 @@
 //const { Telegraf } = require("telegraf");
 const { Composer } = require("micro-bot");
 
-//const bot = new Telegraf("2135760566:AAFEBFri2KRvke8RAor7JNhTq2mYio69hlk");
+//const bot = new Telegraf("");
 const bot = new Composer();
 
 bot.start((ctx) => {
 	ctx.reply("Bot has started");
+});
+
+bot.help((ctx) => {
+	ctx.reply("This is a help message");
 });
 
 // bot.launch();
